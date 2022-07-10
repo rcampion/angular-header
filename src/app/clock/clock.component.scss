@@ -1,0 +1,194 @@
+
+#clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    transform: scale(0.5, 0.5);
+    transform-origin: 0px 0px;
+}
+
+#clock-back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: translate(25px, 25px);
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 8px solid #fbfbfb;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    background-color: #404040;
+    background: radial-gradient(ellipse at center, #505050 0%, #303030 100%);
+}
+
+#clock #quarters div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 24px;
+    margin-left: -4px;
+    margin-top: -12px;
+    background-color: #bbb;
+}
+
+#clock #quarters div:first-child {
+    transform: rotate(0deg) translateY(-80px)
+}
+
+#clock #quarters div:nth-child(2) {
+    transform: rotate(90deg) translateY(-80px)
+}
+
+#clock #quarters div:nth-child(3) {
+    transform: rotate(180deg) translateY(-80px)
+}
+
+#clock #quarters div:nth-child(4) {
+    transform: rotate(270deg) translateY(-80px)
+}
+
+#clock #five-minutes div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 12px;
+    margin-left: -2px;
+    margin-top: -6px;
+    background-color: #bbb;
+}
+
+#clock #five-minutes div:first-child {
+    transform: rotate(30deg) translateY(-80px)
+}
+
+#clock #five-minutes div:nth-child(2) {
+    transform: rotate(60deg) translateY(-80px)
+}
+
+#clock #five-minutes div:nth-child(3) {
+    transform: rotate(120deg) translateY(-80px)
+}
+
+#clock #five-minutes div:nth-child(4) {
+    transform: rotate(150deg) translateY(-80px)
+}
+
+#clock #five-minutes div:nth-child(5) {
+    transform: rotate(210deg) translateY(-80px)
+}
+
+#clock #five-minutes div:nth-child(6) {
+    transform: rotate(240deg) translateY(-80px)
+}
+
+#clock #five-minutes div:nth-child(7) {
+    transform: rotate(300deg) translateY(-80px)
+}
+
+#clock #five-minutes div:nth-child(8) {
+    transform: rotate(330deg) translateY(-80px)
+}
+
+@keyframes clock {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+/*
+#hours-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 100px;
+    margin-left: -5px;
+    margin-top: -100px;
+    transform-origin: 5px 100px;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    animation: clock 43200s steps(60, end) infinite;
+}
+*/
+
+#hours-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 70px;
+    margin-left: -5px;
+    margin-top: -70px;
+    transform-origin: 5px 70px;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    animation: clock 43200s steps(60, end) infinite;
+}
+
+/*
+#minutes-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 100px;
+    margin-left: -4px;
+    margin-top: -100px;
+    transform-origin: 4px 100px;
+    background-color: #fdfdfd;
+    border-radius: 4px;
+    animation: clock 3600s steps(60, end) infinite;
+}
+*/
+#minutes-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 80px;
+    margin-left: -4px;
+    margin-top: -80px;
+    transform-origin: 4px 80px;
+    background-color: #fdfdfd;
+    border-radius: 4px;
+    animation: clock 3600s steps(60, end) infinite;
+}
+/*
+#seconds-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 100px;
+    margin-left: -2px;
+    margin-top: -100px;
+    transform-origin: 2px 100px;
+    background-color: #e10000;
+    animation: clock 60s steps(60, end) infinite;
+}
+*/
+#seconds-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 90px;
+    margin-left: -2px;
+    margin-top: -90px;
+    transform-origin: 2px 90px;
+    background-color: #e10000;
+    animation: clock 60s steps(60, end) infinite;
+}
+#center-cap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    margin-top: -9px;
+    background-color: #e10000;
+    border-radius: 50%;
+}
